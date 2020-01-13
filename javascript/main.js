@@ -15,14 +15,7 @@ function calculate_tax(annual_salary) {
 		return 0;
 		}
  }
-		
- function read_status() {
-	var data_0001 = '{"emp_id":"0001","last_name":"Doe","first_name":"John","annual_salary":"75000","super":"7","pay_status":"Unpaid"}';
-	var json = JSON.parse(data_0001);
-	var status = json.pay_status;
-	return status;
- }
-	
+
  function view_payslip() {
 	var first_name = (document.getElementById("first_name").value).toUpperCase();
 	var last_name = (document.getElementById("last_name").value).toUpperCase();
@@ -52,13 +45,11 @@ function calculate_tax(annual_salary) {
 	document.getElementById("field7").innerHTML = field7;	
 	document.getElementById("field8").innerHTML = field8; 
  }
+ 		
+ function read_status() {
+ }
  
  function save_input() {
-	var first_name = (document.getElementById("first_name").value).toUpperCase();
-	var last_name = (document.getElementById("last_name").value).toUpperCase();
-	var annual_rate = document.getElementById("annual_rate").value;
-	var super_rate = document.getElementById("super_rate").value;
-	
  }
 
 
